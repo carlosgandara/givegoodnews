@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>givegood.news</title>
+
+<style>
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #10182f;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  #screen {
+    position: fixed;
+    inset: 0;
+    isolation: isolate;
+    overflow: hidden;
+    touch-action: pan-y pinch-zoom;
+  }
+
+  #background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  /* SUNRISE */
+  #sunrise {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background: linear-gradient(
+      to bottom,
+      #425982 0%,
+      #bf8da0 40%,
+      #ffc48b 75%,
+      #ffe3aa 100%
+    );
+  }
+
+  #daylight {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      #78b8e0,
+      #bddfee 48%,
+      #ffe7b0 100%
+    );
+    opacity: 0;
+  }
+
+  #glow {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    width: 150vmax;
+    height: 110vmax;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+      ellipse,
+      #ffe6a3aa,
+      #ffb87555 25%,
+      transparent 65%
+    );
+  }
+
+  #sun {
+    position: absolute;
+    left: 50%;
+    top: 77%;
+    width: clamp(170px, 22vw, 360px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff0b3;
+    box-shadow:
+      0 0 55px 20px #ffda8c80,
+      0 0 150px 65px #ffbb6440;
+  }
+
+  .cloud {
+    position: absolute;
+    height: 7vh;
+    border-radius: 50%;
+    background: #fff0dc;
+    filter: blur(18px);
+    opacity: .3;
+  }
+
+  #cloud1 { width: 42vw; top: 13%; left: -8%; }
+  #cloud2 { width: 38vw; top: 25%; right: -5%; }
+
+  .mountain {
+    position: absolute;
+    inset: auto 0 0;
+  }
+
+  .mountain.back {
+    height: 15%;
+    background: #77768a;
+    clip-path: polygon(
+      0 60%, 12% 15%, 25% 55%, 39% 5%,
+      53% 45%, 68% 20%, 84% 60%, 96% 25%,
+      100% 40%, 100% 100%, 0 100%
+    );
+  }
+
+  .mountain.front {
+    height: 10%;
+    background: #394e60;
+    clip-path: polygon(
+      0 40%, 16% 65%, 33% 20%, 50% 70%,
+      68% 25%, 85% 65%, 100% 30%,
+      100% 100%, 0 100%
+    );
+  }
+
+  /* SPACE */
+  #night {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background:
+      radial-gradient(ellipse at 15% 15%, #314e73, transparent 65%),
+      radial-gradient(ellipse at 85% 85%, #582b68, transparent 65%),
+      #080d20;
+  }
+
+  #spaceCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* FULL IMAGE — NEVER CROPPED */
+  #imageArea {
+    position: absolute;
+    inset: 18% 3% 18%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  #image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 30px #0007);
+  }
+
+  .topbar {
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 4;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 20px 26px;
+    background: linear-gradient(#0006, transparent);
+  }
+
+  .brand {
+    font: bold 28px Georgia, serif;
+    color: #fff5e6;
+    text-shadow: 0 2px 10px #0007;
+    white-space: nowrap;
+  }
+
+  .brand span { color: #ff7965; }
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  button {
+    padding: 11px 16px;
+    border: 1px solid #ffffff50;
+    border-radius: 30px;
+    background: #172135b8;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+  }
+
+  button:hover { background: #3c4d68dd; }
+  button:disabled { opacity: .35; cursor: default; }
+
+  button:focus-visible {
+    outline: 3px solid #ffd477;
+    outline-offset: 4px;
+  }
+
+  #music[aria-pressed="true"] {
+    border-color: #ffd477;
+    background: #4c493ac9;
+  }
+
+  .controls {
+    position: absolute;
+    inset: auto 0 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 16px;
+    background: linear-gradient(transparent, #0009);
+  }
+
+  #counter {
+    min-width: 75px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #000;
+  }
+
+  #message {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    right: 10%;
+    z-index: 3;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.7;
+    border-radius: 14px;
+    background: #132039bb;
+  }
+
+  #notice {
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    max-width: 90%;
+    width: max-content;
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: #132039e8;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  [hidden] { display: none !important; }
+
+  @media (max-width: 650px) {
+    .topbar { padding: 14px; }
+    .brand { font-size: 21px; }
+    .tools { gap: 6px; }
+    button { padding: 9px 11px; font-size: 12px; }
+    #imageArea { inset: 23% 2% 20%; }
+    .controls { gap: 14px; }
+  }
+
+  @media (max-width: 400px) {
+    .topbar { flex-wrap: wrap; }
+    .tools { width: 100%; }
+  }
+</style>
+</head>
+
+<body>
+<main id="screen" aria-label="Goodie cinema viewer">
+
+  <div id="background" aria-hidden="true">
+    <div id="sunrise">
+      <div id="daylight"></div>
+      <div id="glow"></div>
+      <div id="sun"></div>
+      <div id="cloud1" class="cloud"></div>
+      <div id="cloud2" class="cloud"></div>
+      <div class="mountain back"></div>
+      <div class="mountain front"></div>
+    </div>
+
+    <div id="night">
+      <canvas id="spaceCanvas"></canvas>
+    </div>
+  </div>
+
+  <div id="imageArea">
+    <img id="image" alt="Goodie illustrated story" hidden>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">givegood<span>.news</span></div>
+
+    <div class="tools">
+      <button id="music" type="button" aria-pressed="false">
+        ♪ Play rain
+      </button>
+      <button id="restart" type="button">↻ Sunrise</button>
+      <button id="motion" type="button">Pause effects</button>
+      <button id="fullscreen" type="button">⛶ Full screen</button>
+    </div>
+  </header>
+
+  <div id="message" role="status">Looking for images…</div>
+  <div id="notice" role="status" hidden></div>
+
+  <nav class="controls" aria-label="Image navigation">
+    <button id="previous" type="button" disabled>← Previous</button>
+    <span id="counter" role="status" aria-live="polite">0 / 0</span>
+    <button id="next" type="button" disabled>Next →</button>
+  </nav>
+
+  <!-- One persistent audio player, independent of the image gallery. -->
+  <audio
+    id="rainAudio"
+    src="music/rainmusic.mp3"
+    preload="none"
+    loop
+  ></audio>
+</main>
+
+<script>
+/*
+  Folder structure:
+
+  index.html
+  img/
+    image1.png
+    image2.png
+    image3.png
+  music/
+    rainmusic.mp3
+*/
+
+const $ = id => document.getElementById(id);
+const screenElement = $("screen");
+const image = $("image");
+const canvas = $("spaceCanvas");
+const ctx = canvas.getContext("2d");
+
+const STORAGE_KEY = "givegood-visible-sunrise-v1";
+const CYCLE = 120;
+
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+
+let saved = {};
+try {
+  saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}") || {};
+} catch {}
+
+let elapsed = Number.isFinite(saved.elapsed)
+  ? Math.max(0, saved.elapsed) % CYCLE
+  : 0;
+
+let paused = typeof saved.paused === "boolean"
+  ? saved.paused
+  : reduceMotion.matches;
+
+let current = Number.isInteger(saved.image) && saved.image >= 0
+  ? saved.image
+  : 0;
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      elapsed,
+      paused,
+      image: current
+    }));
+  } catch {}
+}
+
+/* MESSAGES */
+let noticeTimer;
+
+function notify(text) {
+  $("notice").textContent = text;
+  $("notice").hidden = false;
+
+  clearTimeout(noticeTimer);
+  noticeTimer = setTimeout(() => {
+    $("notice").hidden = true;
+  }, 4500);
+}
+
+/* RAIN MUSIC
+   Only these controls affect the audio.
+   Changing slides or pausing effects never interrupts it.
+*/
+const rainAudio = $("rainAudio");
+const musicButton = $("music");
+let musicStarting = false;
+
+rainAudio.volume = 0.6;
+
+function updateMusicButton() {
+  const playing = !rainAudio.paused && !rainAudio.ended;
+
+  musicButton.textContent = playing
+    ? "■ Stop rain"
+    : "♪ Play rain";
+
+  musicButton.setAttribute("aria-pressed", String(playing));
+}
+
+musicButton.onclick = async () => {
+  if (musicStarting) return;
+
+  if (!rainAudio.paused) {
+    rainAudio.pause();
+
+    // Stop returns playback to the beginning.
+    try {
+      rainAudio.currentTime = 0;
+    } catch {}
+
+    updateMusicButton();
+    return;
+  }
+
+  musicStarting = true;
+  musicButton.disabled = true;
+  musicButton.textContent = "Loading rain…";
+
+  try {
+    // Retry loading if a previous attempt failed.
+    if (rainAudio.error) {
+      rainAudio.load();
+    }
+
+    await rainAudio.play();
+  } catch (error) {
+    if (error.name === "NotAllowedError") {
+      notify("Click Play rain again to allow audio.");
+    } else {
+      notify(
+        "Could not play music/rainmusic.mp3. Check that the file exists and is a valid MP3."
+      );
+    }
+  } finally {
+    musicStarting = false;
+    musicButton.disabled = false;
+    updateMusicButton();
+  }
+};
+
+rainAudio.addEventListener("playing", updateMusicButton);
+rainAudio.addEventListener("pause", updateMusicButton);
+rainAudio.addEventListener("ended", updateMusicButton);
+
+rainAudio.addEventListener("error", () => {
+  updateMusicButton();
+
+  if (!musicStarting) {
+    notify(
+      "Rain audio could not load. Check music/rainmusic.mp3."
+    );
+  }
+});
+
+/* GALLERY */
+const images = [];
+let searching = true;
+let touchStart = null;
+let galleryTouched = false;
+
+function updateControls() {
+  $("counter").textContent =
+    `${images.length ? current + 1 : 0} / ${images.length}` +
+    (searching ? "…" : "");
+
+  $("previous").disabled = !images.length || current === 0;
+  $("next").disabled = !images.length || current >= images.length - 1;
+}
+
+function showImage() {
+  if (!images.length) return;
+
+  image.hidden = false;
+  image.alt = `Goodie story ${current + 1}`;
+  image.src = images[current];
+  $("message").hidden = true;
+  updateControls();
+}
+
+function move(direction) {
+  if (!images.length) return;
+
+  const destination = Math.max(
+    0,
+    Math.min(images.length - 1, current + direction)
+  );
+
+  if (destination !== current) {
+    galleryTouched = true;
+    current = destination;
+    showImage();
+    saveState();
+
+    // Audio is deliberately untouched.
+  }
+}
+
+function imageExists(src) {
+  return new Promise(resolve => {
+    const probe = new Image();
+    probe.onload = () => resolve(true);
+    probe.onerror = () => resolve(false);
+    probe.src = src;
+  });
+}
+
+async function discoverImages() {
+  const requested = current;
+  current = 0;
+
+  for (let number = 1; ; number++) {
+    const src = `img/image${number}.png`;
+    if (!await imageExists(src)) break;
+
+    images.push(src);
+
+    if (images.length === 1) showImage();
+    else updateControls();
+  }
+
+  searching = false;
+
+  if (images.length) {
+    if (!galleryTouched) {
+      current = Math.min(requested, images.length - 1);
+    }
+    showImage();
+  } else {
+    $("message").textContent =
+      "Put image1.png, image2.png, etc. in an img folder beside index.html.";
+  }
+
+  updateControls();
+}
+
+$("previous").onclick = () => move(-1);
+$("next").onclick = () => move(1);
+
+image.onerror = () => {
+  image.hidden = true;
+  $("message").textContent =
+    `Could not load ${images[current]}. Check the filename.`;
+  $("message").hidden = false;
+};
+
+async function toggleFullscreen() {
+  try {
+    if (document.fullscreenElement) {
+      await document.exitFullscreen();
+    } else {
+      await screenElement.requestFullscreen();
+    }
+  } catch {
+    notify("Fullscreen is unavailable in this browser.");
+  }
+}
+
+$("fullscreen").onclick = toggleFullscreen;
+
+document.addEventListener("fullscreenchange", () => {
+  $("fullscreen").textContent = document.fullscreenElement
+    ? "✕ Exit full screen"
+    : "⛶ Full screen";
+});
+
+document.addEventListener("keydown", event => {
+  if (
+    event.ctrlKey || event.metaKey || event.altKey ||
+    event.target.matches("input, textarea, select")
+  ) return;
+
+  if (event.key === "ArrowRight") {
+    event.preventDefault();
+    move(1);
+  }
+
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    move(-1);
+  }
+
+  if (event.key.toLowerCase() === "f" && !event.repeat) {
+    toggleFullscreen();
+  }
+});
+
+screenElement.addEventListener("touchstart", event => {
+  if (
+    event.touches.length !== 1 ||
+    event.target.closest("button")
+  ) {
+    touchStart = null;
+    return;
+  }
+
+  touchStart = {
+    x: event.touches[0].clientX,
+    y: event.touches[0].clientY
+  };
+}, { passive: true });
+
+screenElement.addEventListener("touchend", event => {
+  if (!touchStart) return;
+
+  const dx = event.changedTouches[0].clientX - touchStart.x;
+  const dy = event.changedTouches[0].clientY - touchStart.y;
+
+  if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+    move(dx < 0 ? 1 : -1);
+  }
+
+  touchStart = null;
+}, { passive: true });
+
+screenElement.addEventListener("touchcancel", () => {
+  touchStart = null;
+});
+
+/* BACKGROUND */
+let width = innerWidth;
+let height = innerHeight;
+
+const stars = Array.from({ length: 200 }, (_, i) => ({
+  x: ((i * 0.61803398875) % 1),
+  y: ((i * 0.41421356237) % 1),
+  radius: 0.6 + ((i * 0.2718) % 1) * 1.8,
+  phase: i * 1.73,
+  speed: 0.5 + ((i * 0.732) % 1)
+}));
+
+const rain = Array.from({ length: 130 }, (_, i) => ({
+  x: ((i * 0.754877) % 1),
+  y: ((i * 0.56984) % 1),
+  speed: 0.25 + ((i * 0.3819) % 1) * 0.5,
+  length: 8 + ((i * 0.17) % 1) * 18
+}));
+
+const clamp = value => Math.max(0, Math.min(1, value));
+
+function smooth(start, end, value) {
+  const t = clamp((value - start) / (end - start));
+  return t * t * (3 - 2 * t);
+}
+
+function wrap(value) {
+  return ((value % 1) + 1) % 1;
+}
+
+function planet(x, y, radius, color, time, ringed) {
+  ctx.save();
+  ctx.translate(x, y);
+
+  if (ringed) {
+    ctx.save();
+    ctx.rotate(-0.35 + Math.sin(time * 0.4) * 0.15);
+    ctx.strokeStyle = "#d7bda994";
+    ctx.lineWidth = radius * 0.19;
+    ctx.beginPath();
+    ctx.ellipse(
+      0, 0,
+      radius * 1.75,
+      radius * 0.48,
+      0, 0,
+      Math.PI * 2
+    );
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, Math.PI * 2);
+  ctx.clip();
+
+  const gradient = ctx.createRadialGradient(
+    -radius * 0.4, -radius * 0.4, radius * 0.05,
+    radius * 0.35, radius * 0.3, radius * 1.5
+  );
+
+  gradient.addColorStop(0, color);
+  gradient.addColorStop(1, "#101528");
+  ctx.fillStyle = gradient;
+  ctx.fillRect(-radius, -radius, radius * 2, radius * 2);
+
+  for (let i = 0; i < 7; i++) {
+    const longitude = time * 0.5 + i * 1.1;
+    const horizontal = Math.sin(longitude);
+    const facing = Math.cos(longitude);
+
+    if (facing <= 0) continue;
+
+    ctx.fillStyle = `rgba(255,255,255,${0.12 * facing})`;
+    ctx.beginPath();
+    ctx.ellipse(
+      horizontal * radius * 0.75,
+      (i / 6 - 0.5) * radius * 1.3,
+      Math.max(1, radius * 0.13 * facing),
+      radius * 0.07,
+      -0.15,
+      0,
+      Math.PI * 2
+    );
+    ctx.fill();
+  }
+
+  ctx.restore();
+  ctx.restore();
+}
+
+function drawSpace(time) {
+  if (!ctx) return;
+
+  ctx.clearRect(0, 0, width, height);
+
+  stars.forEach(star => {
+    const brightness =
+      0.08 + Math.pow(
+        0.5 + 0.5 * Math.sin(time * star.speed + star.phase),
+        2
+      ) * 0.92;
+
+    const x = wrap(star.x + time * 0.002) * width;
+    const y = star.y * height;
+
+    ctx.fillStyle = `rgba(225,238,255,${brightness})`;
+    ctx.beginPath();
+    ctx.arc(x, y, star.radius, 0, Math.PI * 2);
+    ctx.fill();
+  });
+
+  const size = Math.min(width, height);
+
+  planet(
+    width * 0.15 + Math.sin(time * 0.3) * 25,
+    height * 0.12 + Math.cos(time * 0.3) * 14,
+    size * 0.085,
+    "#85b9df",
+    time,
+    false
+  );
+
+  planet(
+    width * 0.83 + Math.cos(time * 0.25) * 20,
+    height * 0.88 + Math.sin(time * 0.25) * 12,
+    size * 0.07,
+    "#dab08b",
+    time,
+    true
+  );
+
+  ctx.strokeStyle = "#b8d7ff55";
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+
+  rain.forEach(drop => {
+    const x = wrap(drop.x - time * drop.speed * 0.12) * width;
+    const y = wrap(drop.y + time * drop.speed) * height;
+
+    ctx.moveTo(x, y);
+    ctx.lineTo(x - drop.length * 0.22, y + drop.length);
+  });
+
+  ctx.stroke();
+}
+
+function renderBackground() {
+  const phase = elapsed % CYCLE;
+
+  /*
+    0–35:    sunrise
+    35–50:   fade into space
+    50–95:   planets, stars, rain
+    95–120:  fade back into sunrise
+  */
+  let nightOpacity;
+
+  if (phase < 35) {
+    nightOpacity = 0;
+  } else if (phase < 50) {
+    nightOpacity = smooth(35, 50, phase);
+  } else if (phase < 95) {
+    nightOpacity = 1;
+  } else {
+    nightOpacity = 1 - smooth(95, 120, phase);
+  }
+
+  const sunriseTime = phase >= 95 ? phase - CYCLE : phase;
+  const rise = smooth(-25, 35, sunriseTime);
+
+  $("sun").style.top = `${83 - rise * 76}%`;
+  $("daylight").style.opacity = String(rise * 0.85);
+  $("glow").style.top = `${76 - rise * 45}%`;
+
+  $("cloud1").style.transform =
+    `translateX(${Math.sin(elapsed * 0.04) * 45}px)`;
+
+  $("cloud2").style.transform =
+    `translateX(${Math.cos(elapsed * 0.035) * 40}px)`;
+
+  $("night").style.opacity = String(nightOpacity);
+
+  if (nightOpacity > 0) {
+    drawSpace(elapsed);
+  }
+}
+
+function resize() {
+  width = screenElement.clientWidth;
+  height = screenElement.clientHeight;
+
+  const ratio = Math.min(devicePixelRatio || 1, 1.5);
+  canvas.width = Math.round(width * ratio);
+  canvas.height = Math.round(height * ratio);
+
+  if (ctx) ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+  renderBackground();
+}
+
+let frameId = null;
+let lastTime = null;
+
+function animate(time) {
+  frameId = null;
+  if (paused || document.hidden) return;
+
+  const delta = lastTime === null
+    ? 0
+    : Math.min((time - lastTime) / 1000, 0.1);
+
+  lastTime = time;
+  elapsed = (elapsed + delta) % CYCLE;
+
+  renderBackground();
+  frameId = requestAnimationFrame(animate);
+}
+
+function syncAnimation() {
+  if (frameId !== null) {
+    cancelAnimationFrame(frameId);
+    frameId = null;
+  }
+
+  lastTime = null;
+  $("motion").textContent = paused ? "Play effects" : "Pause effects";
+  renderBackground();
+
+  if (!paused && !document.hidden) {
+    frameId = requestAnimationFrame(animate);
+  }
+}
+
+$("motion").onclick = () => {
+  paused = !paused;
+  syncAnimation();
+  saveState();
+};
+
+$("restart").onclick = () => {
+  elapsed = 0;
+  paused = false;
+  syncAnimation();
+  saveState();
+};
+
+reduceMotion.addEventListener("change", event => {
+  paused = event.matches;
+  syncAnimation();
+  saveState();
+});
+
+document.addEventListener("visibilitychange", () => {
+  saveState();
+  syncAnimation();
+
+  // Music remains independent of background animation.
+});
+
+window.addEventListener("pagehide", saveState);
+window.addEventListener("resize", resize);
+setInterval(saveState, 2000);
+
+resize();
+syncAnimation();
+discoverImages();
+updateMusicButton();
+</script>
+</body>
+</html>
