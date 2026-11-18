@@ -6,6 +6,11 @@
 <title>givegoodnews.com</title>
 
 <style>
+  .main-menu { display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  .main-menu a { color:#fff5e6; font-size:16px; text-decoration:none; padding:8px 2px; }
+  .main-menu a:hover, .main-menu a[aria-current] { color:#ffd477; }
+  .main-menu a:focus-visible { outline:3px solid #ffd477; outline-offset:4px; }
+  @media(max-width:900px) { .topbar { flex-wrap:wrap; } .main-menu { order:3; width:100%; } }
   * { box-sizing: border-box; }
 
   html, body {
@@ -304,6 +309,11 @@
 
   <header class="topbar">
     <div class="brand">givegoodnews<span>.com</span></div>
+
+    <nav class="main-menu" aria-label="Main menu">
+      <a href="index.html" aria-current="page">The stories</a>
+      <a href="about.html">About me</a>
+    </nav>
 
     <div class="tools">
       <button id="music" type="button" aria-pressed="false">
