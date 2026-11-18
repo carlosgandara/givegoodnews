@@ -1,6 +1,6 @@
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageChops
-import json, shutil, hashlib
+import json, shutil, hashlib, os
 
 root=Path(__file__).parent
 backup=root/'originals-before-domain-change'
@@ -10,6 +10,10 @@ report=[]
 for p in files:
     original=backup/p.name
     if not original.exists(): shutil.copy2(p,original)
+    if p.stem.startswith('image') and int(p.stem[5:])>=43:
+        shutil.copy2(original,p)
+        report.append({'file':p.name,'status':'already_has_correct_domain','all_pixels_unchanged':True,'backup':str(original.relative_to(root)).replace('\\','/')})
+        continue
     src=Image.open(original).convert('RGB')
     w,h=src.size
     top=round(h*646/724)
@@ -41,8 +45,11 @@ for p in files:
     dst=src.copy()
     dst.paste(band,(0,top))
     assert ImageChops.difference(src.crop((0,0,w,top)),dst.crop((0,0,w,top))).getbbox() is None
-    dst.save(p,format='PNG',compress_level=6)
-    check=Image.open(p).convert('RGB')
+    temp=p.with_name(p.stem+'.domain-update.tmp')
+    dst.save(temp,format='PNG',compress_level=6)
+    os.replace(temp,p)
+    with Image.open(p) as reopened:
+        check=reopened.convert('RGB')
     assert check.size==src.size
     assert ImageChops.difference(src.crop((0,0,w,top)),check.crop((0,0,w,top))).getbbox() is None
     report.append({'file':p.name,'dimensions':[w,h],'edited_region':[0,top,w,h],'artwork_pixels_unchanged':True,'backup':str(original.relative_to(root)).replace('\\','/'),'original_bytes':original.stat().st_size,'updated_bytes':p.stat().st_size})

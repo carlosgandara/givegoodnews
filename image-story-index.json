@@ -6,6 +6,10 @@
   "numbered_story_count": 51,
   "exact_duplicate_groups": [
     [
+      "achievement-story-v2",
+      "image6"
+    ],
+    [
       "image49",
       "image50"
     ]
@@ -100,7 +104,10 @@
         "image23"
       ],
       "review_basis": "Visual inspection of the actual image",
-      "review_notes": []
+      "review_notes": [],
+      "exact_duplicate_of": [
+        "achievement-story-v2"
+      ]
     },
     "image7": {
       "file": "image7.png",
@@ -711,7 +718,7 @@
       "problem": "A café keeps customers cold under strong air conditioning beside a sign encouraging another coffee to warm up.",
       "goodie_actions": "Presses the heart button while the café worker adjusts the thermostat.",
       "solutions": "Customers are comfortable; an animated snowman leaves through the door.",
-      "message": "Warm up—buy another coffee!",
+      "message": "Warm welcomes shouldn’t cost extra.",
       "underlying_need": "comfort and fair treatment",
       "principle": "Remove needless discomfort rather than profit from it",
       "similar_to": [
@@ -785,18 +792,19 @@
     },
     "image48": {
       "file": "image48.png",
-      "title": "Paying for the next person",
-      "problem": "A café customer sees a reminder that small kindness can travel and someone counting coins.",
-      "goodie_actions": "Presses the heart button while showing the man the next-person opportunity.",
-      "solutions": "The man pays ahead at the café; another customer receives a small kindness.",
-      "message": "A little kindness can go a long way.",
-      "underlying_need": "generosity",
-      "principle": "Pass a small practical benefit to another person",
-      "similar_to": [],
+      "title": "Kindness from a stranger",
+      "problem": "A café customer discovers his pockets are empty when the bill arrives.",
+      "goodie_actions": "Looks on sympathetically as an older stranger steps forward and pays the bill.",
+      "solutions": "The grateful customer and the older stranger share coffee and conversation.",
+      "message": "A stranger. Until someone is kind.",
+      "underlying_need": "practical help and human connection",
+      "principle": "Offer immediate help that turns strangers into companions",
+      "similar_to": [
+        "image5",
+        "image25"
+      ],
       "review_basis": "Visual inspection of the actual image",
-      "review_notes": [
-        "See review correction if the exact payment action is ambiguous at preview size."
-      ]
+      "review_notes": []
     },
     "image49": {
       "file": "image49.png",
@@ -883,6 +891,9 @@
       "review_basis": "Visual inspection of the actual image",
       "review_notes": [
         "Earlier variant of image6; do not count as a new concept."
+      ],
+      "exact_duplicate_of": [
+        "image6"
       ]
     }
   }

@@ -64,8 +64,8 @@ for number,title,problem,actions,solution,message,need,principle,similar in rows
     if not path.exists(): continue
     entries[f'image{number}']={'file':path.name,'title':title,'problem':problem,'goodie_actions':actions,'solutions':solution,'message':message,'underlying_need':need,'principle':principle,'similar_to':[f'image{x}' for x in similar],'review_basis':'Visual inspection of the actual image','review_notes':[]}
 
-# Image48 is inspected separately below before finalizing; do not invent details.
-entries['image48']['review_notes'].append('See review correction if the exact payment action is ambiguous at preview size.')
+entries['image43']['message']='Warm welcomes shouldn’t cost extra.'
+entries['image48'].update(title='Kindness from a stranger',problem='A café customer discovers his pockets are empty when the bill arrives.',goodie_actions='Looks on sympathetically as an older stranger steps forward and pays the bill.',solutions='The grateful customer and the older stranger share coffee and conversation.',message='A stranger. Until someone is kind.',underlying_need='practical help and human connection',principle='Offer immediate help that turns strangers into companions',similar_to=['image5','image25'])
 
 for filename in ['achievement-story.png','achievement-story-v2.png']:
     p=root/'img'/filename
@@ -77,6 +77,11 @@ for filename in ['achievement-story.png','achievement-story-v2.png']:
         entries[p.stem]=e
 
 files=sorted((root/'img').glob('*.png'))
+for key,values in json.loads((root/'story-index-additions.json').read_text(encoding='utf-8')).items():
+    title,problem,actions,solution,message,need,principle,similar=values
+    if (root/'img'/(key+'.png')).exists():
+        entries[key]={'file':key+'.png','title':title,'problem':problem,'goodie_actions':actions,'solutions':solution,'message':message,'underlying_need':need,'principle':principle,'similar_to':['image'+str(n) for n in similar],'review_basis':'Visual inspection of the actual image','review_notes':[]}
+entries['image49']['similar_to']=['image18','image34','image36','image39']
 hashes={}
 for p in files:
     digest=hashlib.sha256(p.read_bytes()).hexdigest()

@@ -1,0 +1,869 @@
+{
+  "domain": "givegoodnews.com",
+  "resized": false,
+  "lossy_compression": false,
+  "files": [
+    {
+      "file": "achievement-story-v2.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/achievement-story-v2.png",
+      "original_bytes": 2760407,
+      "updated_bytes": 2615452
+    },
+    {
+      "file": "achievement-story.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/achievement-story.png",
+      "original_bytes": 2841933,
+      "updated_bytes": 2677545
+    },
+    {
+      "file": "image1.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image1.png",
+      "original_bytes": 2839945,
+      "updated_bytes": 2670566
+    },
+    {
+      "file": "image10.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image10.png",
+      "original_bytes": 2977371,
+      "updated_bytes": 2792218
+    },
+    {
+      "file": "image11.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image11.png",
+      "original_bytes": 2990146,
+      "updated_bytes": 2804536
+    },
+    {
+      "file": "image12.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image12.png",
+      "original_bytes": 3164617,
+      "updated_bytes": 2949575
+    },
+    {
+      "file": "image13.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image13.png",
+      "original_bytes": 3128756,
+      "updated_bytes": 2926785
+    },
+    {
+      "file": "image14.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image14.png",
+      "original_bytes": 3153694,
+      "updated_bytes": 2929352
+    },
+    {
+      "file": "image15.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image15.png",
+      "original_bytes": 3198759,
+      "updated_bytes": 2973346
+    },
+    {
+      "file": "image16.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image16.png",
+      "original_bytes": 3190870,
+      "updated_bytes": 2961821
+    },
+    {
+      "file": "image17.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image17.png",
+      "original_bytes": 3023770,
+      "updated_bytes": 2835626
+    },
+    {
+      "file": "image18.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image18.png",
+      "original_bytes": 3196293,
+      "updated_bytes": 2956619
+    },
+    {
+      "file": "image19.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image19.png",
+      "original_bytes": 3066711,
+      "updated_bytes": 2870561
+    },
+    {
+      "file": "image2.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image2.png",
+      "original_bytes": 3105197,
+      "updated_bytes": 2876458
+    },
+    {
+      "file": "image20.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image20.png",
+      "original_bytes": 3172421,
+      "updated_bytes": 2947672
+    },
+    {
+      "file": "image21.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image21.png",
+      "original_bytes": 2899499,
+      "updated_bytes": 2738329
+    },
+    {
+      "file": "image22.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image22.png",
+      "original_bytes": 3331078,
+      "updated_bytes": 3048008
+    },
+    {
+      "file": "image23.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image23.png",
+      "original_bytes": 2961787,
+      "updated_bytes": 2777136
+    },
+    {
+      "file": "image24.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image24.png",
+      "original_bytes": 3233535,
+      "updated_bytes": 2992723
+    },
+    {
+      "file": "image25.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image25.png",
+      "original_bytes": 2957296,
+      "updated_bytes": 2782462
+    },
+    {
+      "file": "image26.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image26.png",
+      "original_bytes": 3092580,
+      "updated_bytes": 2865476
+    },
+    {
+      "file": "image27.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image27.png",
+      "original_bytes": 2847191,
+      "updated_bytes": 2626741
+    },
+    {
+      "file": "image28.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image28.png",
+      "original_bytes": 3154865,
+      "updated_bytes": 2887658
+    },
+    {
+      "file": "image29.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image29.png",
+      "original_bytes": 3258606,
+      "updated_bytes": 3002028
+    },
+    {
+      "file": "image3.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image3.png",
+      "original_bytes": 3292150,
+      "updated_bytes": 2990510
+    },
+    {
+      "file": "image30.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image30.png",
+      "original_bytes": 3201103,
+      "updated_bytes": 2945696
+    },
+    {
+      "file": "image31.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image31.png",
+      "original_bytes": 3318032,
+      "updated_bytes": 3031869
+    },
+    {
+      "file": "image32.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image32.png",
+      "original_bytes": 3485846,
+      "updated_bytes": 3162333
+    },
+    {
+      "file": "image33.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image33.png",
+      "original_bytes": 3291911,
+      "updated_bytes": 3005837
+    },
+    {
+      "file": "image34.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image34.png",
+      "original_bytes": 3147369,
+      "updated_bytes": 2904013
+    },
+    {
+      "file": "image35.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image35.png",
+      "original_bytes": 3018227,
+      "updated_bytes": 2798446
+    },
+    {
+      "file": "image36.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image36.png",
+      "original_bytes": 2876702,
+      "updated_bytes": 2688287
+    },
+    {
+      "file": "image37.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image37.png",
+      "original_bytes": 3051891,
+      "updated_bytes": 2800011
+    },
+    {
+      "file": "image38.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image38.png",
+      "original_bytes": 3111960,
+      "updated_bytes": 2825918
+    },
+    {
+      "file": "image39.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image39.png",
+      "original_bytes": 3268395,
+      "updated_bytes": 2953391
+    },
+    {
+      "file": "image4.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image4.png",
+      "original_bytes": 3195370,
+      "updated_bytes": 2920660
+    },
+    {
+      "file": "image40.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image40.png",
+      "original_bytes": 3076944,
+      "updated_bytes": 2794684
+    },
+    {
+      "file": "image41.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image41.png",
+      "original_bytes": 3192628,
+      "updated_bytes": 2893963
+    },
+    {
+      "file": "image42.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image42.png",
+      "original_bytes": 3191288,
+      "updated_bytes": 2874032
+    },
+    {
+      "file": "image43.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image43.png"
+    },
+    {
+      "file": "image44.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image44.png"
+    },
+    {
+      "file": "image45.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image45.png"
+    },
+    {
+      "file": "image46.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image46.png"
+    },
+    {
+      "file": "image47.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image47.png"
+    },
+    {
+      "file": "image48.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image48.png"
+    },
+    {
+      "file": "image49.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image49.png"
+    },
+    {
+      "file": "image5.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image5.png",
+      "original_bytes": 3171861,
+      "updated_bytes": 2899967
+    },
+    {
+      "file": "image50.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image50.png"
+    },
+    {
+      "file": "image51.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image51.png"
+    },
+    {
+      "file": "image52.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image52.png"
+    },
+    {
+      "file": "image53.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image53.png"
+    },
+    {
+      "file": "image54.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image54.png"
+    },
+    {
+      "file": "image55.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image55.png"
+    },
+    {
+      "file": "image56.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image56.png"
+    },
+    {
+      "file": "image57.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image57.png"
+    },
+    {
+      "file": "image58.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image58.png"
+    },
+    {
+      "file": "image59.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image59.png"
+    },
+    {
+      "file": "image6.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image6.png",
+      "original_bytes": 2760407,
+      "updated_bytes": 2615452
+    },
+    {
+      "file": "image60.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image60.png"
+    },
+    {
+      "file": "image61.png",
+      "status": "already_has_correct_domain",
+      "all_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image61.png"
+    },
+    {
+      "file": "image7.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image7.png",
+      "original_bytes": 3118062,
+      "updated_bytes": 2906948
+    },
+    {
+      "file": "image8.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image8.png",
+      "original_bytes": 3091339,
+      "updated_bytes": 2889448
+    },
+    {
+      "file": "image9.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "edited_region": [
+        0,
+        646,
+        2172,
+        724
+      ],
+      "artwork_pixels_unchanged": true,
+      "backup": "originals-before-domain-change/image9.png",
+      "original_bytes": 2977804,
+      "updated_bytes": 2794840
+    }
+  ]
+}
