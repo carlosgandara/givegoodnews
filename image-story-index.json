@@ -1,0 +1,889 @@
+{
+  "domain": "givegoodnews.com",
+  "review_date": "2026-11-17",
+  "purpose": "Review these problems, Goodie actions, solutions and similar concepts before creating another image. Changing a character, prop or wording does not make the underlying story new.",
+  "image_count": 53,
+  "numbered_story_count": 51,
+  "exact_duplicate_groups": [
+    [
+      "image49",
+      "image50"
+    ]
+  ],
+  "images": {
+    "image1": {
+      "file": "image1.png",
+      "title": "Compulsive scrolling",
+      "problem": "A man loses time in an endless social-media wheel.",
+      "goodie_actions": "Shows a postcard reminding him that his time is valuable.",
+      "solutions": "He repairs a motorcycle with an older neighbor.",
+      "message": "Your time is valuable.",
+      "underlying_need": "attention and purpose",
+      "principle": "Leave passive consumption for useful real-world activity",
+      "similar_to": [],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image2": {
+      "file": "image2.png",
+      "title": "Appearance pressure",
+      "problem": "A woman worries that makeup and a perfect appearance are necessary for love.",
+      "goodie_actions": "Shows her a reminder while her dogs look on.",
+      "solutions": "She relaxes outside and enjoys her dogs without performing perfection.",
+      "message": "They love you either way.",
+      "underlying_need": "unconditional acceptance",
+      "principle": "Accept affection without perfect appearance",
+      "similar_to": [],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image3": {
+      "file": "image3.png",
+      "title": "Destructive strength",
+      "problem": "A giant angry man stomps through a damaged street.",
+      "goodie_actions": "Offers a tiny glowing heart and a reminder that strong people need love.",
+      "solutions": "He gently holds the heart and supports a young tree.",
+      "message": "Even the strongest need love.",
+      "underlying_need": "love and gentleness",
+      "principle": "Turn intimidating strength into gentle care",
+      "similar_to": [],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image4": {
+      "file": "image4.png",
+      "title": "Buying happiness",
+      "problem": "A man considers an expensive sports car beneath a promise to buy happiness.",
+      "goodie_actions": "Points to a postcard and the people enjoying one another nearby.",
+      "solutions": "He joins neighbors playing with a paper boat in the rain.",
+      "message": "Some good things have no price.",
+      "underlying_need": "connection beyond consumption",
+      "principle": "Choose shared low-cost joy over a status purchase",
+      "similar_to": [
+        "image17",
+        "image20",
+        "image41"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image5": {
+      "file": "image5.png",
+      "title": "Lonely dinner",
+      "problem": "An older man eats alone beside an empty chair.",
+      "goodie_actions": "Shows him a postcard and an open doorway to a communal meal.",
+      "solutions": "He joins neighbors at their table and shares bread.",
+      "message": "There’s room for you.",
+      "underlying_need": "belonging",
+      "principle": "Accept an invitation to community",
+      "similar_to": [
+        "image25",
+        "image33"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image6": {
+      "file": "image6.png",
+      "title": "Achievement-dependent happiness",
+      "problem": "A father polishes trophies while his child waits with a cardboard box.",
+      "goodie_actions": "Reminds him he does not have to earn every happy moment.",
+      "solutions": "He and his child play in a cardboard spaceship, with Goodie laughing beside them.",
+      "message": "You don’t have to earn every happy moment.",
+      "underlying_need": "connection versus achievement",
+      "principle": "Set achievement aside for imaginative play",
+      "similar_to": [
+        "image7",
+        "image10",
+        "image12",
+        "image20",
+        "image23"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image7": {
+      "file": "image7.png",
+      "title": "Baking perfectionism",
+      "problem": "A baker measures identical cupcakes and rejects imperfect results.",
+      "goodie_actions": "Shows a postcard permitting imperfection.",
+      "solutions": "He decorates funny irregular animal cupcakes with children.",
+      "message": "Good things can be imperfect.",
+      "underlying_need": "freedom from perfection",
+      "principle": "Choose playful making over flawless output",
+      "similar_to": [
+        "image6",
+        "image10",
+        "image12",
+        "image15"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image8": {
+      "file": "image8.png",
+      "title": "Online approval",
+      "problem": "A woman anxiously watches likes and idealized selfies.",
+      "goodie_actions": "Shows a reminder that her worth goes beyond likes.",
+      "solutions": "She shares a bench with an older woman and feeds birds.",
+      "message": "You matter beyond the likes.",
+      "underlying_need": "recognition and connection",
+      "principle": "Replace audience approval with direct companionship",
+      "similar_to": [
+        "image1",
+        "image2",
+        "image47"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image9": {
+      "file": "image9.png",
+      "title": "Caregiver depletion",
+      "problem": "A nurse carries work, dishes, laundry and family demands at once.",
+      "goodie_actions": "Reminds her she can receive care too.",
+      "solutions": "She rests under a blanket while her family brings tea and comfort.",
+      "message": "Let someone care for you, too.",
+      "underlying_need": "receiving care",
+      "principle": "Allow others to care for the caregiver",
+      "similar_to": [
+        "image25",
+        "image30",
+        "image44"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image10": {
+      "file": "image10.png",
+      "title": "Performance anxiety",
+      "problem": "An older pianist is overwhelmed by sheet music and the demand to perform perfectly.",
+      "goodie_actions": "Shows a reminder separating joy from perfection.",
+      "solutions": "He plays a tiny toy piano outdoors while a girl dances and neighbors enjoy it.",
+      "message": "Joy doesn’t need a perfect performance.",
+      "underlying_need": "play and imperfection",
+      "principle": "Choose joyful participation over flawless performance",
+      "similar_to": [
+        "image6",
+        "image7",
+        "image15"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image11": {
+      "file": "image11.png",
+      "title": "Physical comparison",
+      "problem": "A boy compares his body with imposing athletes and their trophies.",
+      "goodie_actions": "Shows a postcard separating worth from competition.",
+      "solutions": "He shares bubble play with his much larger muscular brother.",
+      "message": "Your worth isn’t a competition.",
+      "underlying_need": "self-worth",
+      "principle": "Move from physical ranking to shared delight",
+      "similar_to": [
+        "image2",
+        "image21"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image12": {
+      "file": "image12.png",
+      "title": "Perfect-home control",
+      "problem": "A woman checks pristine cushions while her muddy child waits.",
+      "goodie_actions": "Shows a reminder that a happy home allows real living.",
+      "solutions": "She joins her child making muddy castles, wearing a flowerpot hat.",
+      "message": "A happy home has room for living.",
+      "underlying_need": "permission to be imperfect",
+      "principle": "Choose messy participation over spotless control",
+      "similar_to": [
+        "image6",
+        "image7",
+        "image20"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image13": {
+      "file": "image13.png",
+      "title": "Relentless busyness",
+      "problem": "A delivery cyclist is overwhelmed by schedules, clocks and obligations.",
+      "goodie_actions": "Shows a postcard permitting a pause.",
+      "solutions": "He lies in the grass with an older relative and watches animal-shaped clouds.",
+      "message": "You are allowed to pause.",
+      "underlying_need": "rest and presence",
+      "principle": "Pause work to notice the world",
+      "similar_to": [
+        "image9",
+        "image24",
+        "image26"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image14": {
+      "file": "image14.png",
+      "title": "Adventure belongs to the past",
+      "problem": "A retired sea captain looks sadly at old maps and voyages.",
+      "goodie_actions": "Shows a reminder that small adventures still count.",
+      "solutions": "He captains a playful leaf-built boat with children in a garden stream.",
+      "message": "Small adventures still count.",
+      "underlying_need": "continuing purpose and play",
+      "principle": "Reimagine adventure at a smaller scale",
+      "similar_to": [
+        "image6",
+        "image20",
+        "image33"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image15": {
+      "file": "image15.png",
+      "title": "Creative perfectionism",
+      "problem": "An artist tears up sketches beneath idealized masterpieces.",
+      "goodie_actions": "Shows a postcard encouraging the joy of trying.",
+      "solutions": "She paints a colorful mural with an older wheelchair user.",
+      "message": "Make room for the joy of trying.",
+      "underlying_need": "creative agency",
+      "principle": "Make art together instead of judging every attempt",
+      "similar_to": [
+        "image7",
+        "image10",
+        "image12"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image16": {
+      "file": "image16.png",
+      "title": "Frustration and force",
+      "problem": "A large father grips a tangled garden hose while his child watches.",
+      "goodie_actions": "Shows a reminder that gentleness is strength.",
+      "solutions": "He carefully supports a seedling while his child waters it.",
+      "message": "Gentleness is a kind of strength.",
+      "underlying_need": "gentleness",
+      "principle": "Use physical strength to nurture something fragile",
+      "similar_to": [
+        "image3"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image17": {
+      "file": "image17.png",
+      "title": "Endless equipment upgrades",
+      "problem": "A man surrounded by expensive audio equipment remains dissatisfied.",
+      "goodie_actions": "Shows a postcard separating good moments from upgrades.",
+      "solutions": "He makes music on kitchen pots with his grandmother and neighbors.",
+      "message": "The best moments aren’t upgrades.",
+      "underlying_need": "connection beyond consumption",
+      "principle": "Choose homemade shared music over more equipment",
+      "similar_to": [
+        "image4",
+        "image6",
+        "image20"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image18": {
+      "file": "image18.png",
+      "title": "Saving good things forever",
+      "problem": "An older woman keeps precious porcelain protected and unused.",
+      "goodie_actions": "Shows a reminder about sharing good things.",
+      "solutions": "She uses the porcelain for a garden tea party with children and teddy bears.",
+      "message": "Good things grow when shared.",
+      "underlying_need": "generosity",
+      "principle": "Use treasured possessions to create shared experiences",
+      "similar_to": [
+        "image36",
+        "image39",
+        "image49",
+        "image50"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image19": {
+      "file": "image19.png",
+      "title": "Fear of approaching someone",
+      "problem": "A young man repeatedly drafts a greeting while worrying about a formidable biker neighbor.",
+      "goodie_actions": "Shows a reminder that a small hello can open a door.",
+      "solutions": "He and the biker plant a tiny daisy together.",
+      "message": "A small hello can open a door.",
+      "underlying_need": "trust and connection",
+      "principle": "Initiate contact instead of rehearsing indefinitely",
+      "similar_to": [
+        "image5",
+        "image25"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image20": {
+      "file": "image20.png",
+      "title": "Waiting for an ideal holiday",
+      "problem": "A mother studies vacation brochures while her family waits indoors in rain.",
+      "goodie_actions": "Shows a reminder that happiness can start here.",
+      "solutions": "The family makes an indoor beach picnic with a cushion sandcastle.",
+      "message": "Happiness can begin right here.",
+      "underlying_need": "present connection",
+      "principle": "Create a shared experience now rather than wait for ideal conditions",
+      "similar_to": [
+        "image4",
+        "image6",
+        "image12",
+        "image14"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image21": {
+      "file": "image21.png",
+      "title": "Winning as self-worth",
+      "problem": "A runner fixates on a large first-place trophy.",
+      "goodie_actions": "Shows a reminder that winning is not the only way to feel good.",
+      "solutions": "He applauds the winner while standing on the second-place podium.",
+      "message": "Winning isn’t the only way to feel good.",
+      "underlying_need": "self-worth beyond ranking",
+      "principle": "Celebrate another person’s success while accepting second place",
+      "similar_to": [
+        "image6",
+        "image11"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image22": {
+      "file": "image22.png",
+      "title": "Size of success",
+      "problem": "A fisherman is disappointed beside empty nets and substantial equipment.",
+      "goodie_actions": "Shows a reminder that a good day is not measured by size.",
+      "solutions": "He and a child admire a tiny fish in a tide pool.",
+      "message": "A good day isn’t measured by size.",
+      "underlying_need": "attention and perspective",
+      "principle": "Notice a small discovery instead of demanding a large catch",
+      "similar_to": [
+        "image13",
+        "image14",
+        "image26"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image23": {
+      "file": "image23.png",
+      "title": "Important work crowds out a child",
+      "problem": "A mechanic attends to work while his son waits with a broken toy truck.",
+      "goodie_actions": "Shows a reminder that small things deserve his time.",
+      "solutions": "He repairs the toy truck with his delighted son.",
+      "message": "Small things deserve your time.",
+      "underlying_need": "attention and connection",
+      "principle": "Give a child’s small need time and attention",
+      "similar_to": [
+        "image1",
+        "image6"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image24": {
+      "file": "image24.png",
+      "title": "Purchasing peace",
+      "problem": "A woman is tense despite many wellness gadgets and candles.",
+      "goodie_actions": "Shows a reminder that peace can begin with a small step.",
+      "solutions": "She walks barefoot outdoors with an older woman and a duck.",
+      "message": "Peace can start with one small step.",
+      "underlying_need": "grounding and presence",
+      "principle": "Choose a simple walk over accumulating wellness products",
+      "similar_to": [
+        "image4",
+        "image13",
+        "image17"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image25": {
+      "file": "image25.png",
+      "title": "Strength mistaken for isolation",
+      "problem": "A firefighter stays alone despite invitations from other people.",
+      "goodie_actions": "Reminds him that strength and needing company can coexist.",
+      "solutions": "He plays chess outdoors with an older veteran.",
+      "message": "You can be strong and still need company.",
+      "underlying_need": "companionship",
+      "principle": "Accept companionship without treating it as weakness",
+      "similar_to": [
+        "image3",
+        "image5",
+        "image9"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image26": {
+      "file": "image26.png",
+      "title": "Capturing instead of experiencing",
+      "problem": "A photographer is buried in equipment and sees the sunset through a small screen.",
+      "goodie_actions": "Shows a postcard questioning the effort to preserve every moment.",
+      "solutions": "He leaves cameras on a dry towel and runs barefoot into the sea in his clothes.",
+      "message": "You can miss a moment while trying to keep it.",
+      "underlying_need": "presence",
+      "principle": "Set recording equipment aside and experience the moment",
+      "similar_to": [
+        "image1",
+        "image13",
+        "image47"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image27": {
+      "file": "image27.png",
+      "title": "Anxiety about beginning",
+      "problem": "A woman faces a long staircase disappearing into darkness.",
+      "goodie_actions": "Lights only the first step and shows the short message This one.",
+      "solutions": "She takes that first illuminated step while the rest remains dark.",
+      "message": "This one.",
+      "underlying_need": "agency amid uncertainty",
+      "principle": "Take a manageable first step without seeing the whole route",
+      "similar_to": [],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image28": {
+      "file": "image28.png",
+      "title": "Invisible night work",
+      "problem": "An exhausted baker leaves his bakery after a night shift.",
+      "goodie_actions": "Shows the postcard Because of you.",
+      "solutions": "He notices neighbors enjoying the bread he made and recognizes his contribution.",
+      "message": "Because of you.",
+      "underlying_need": "meaning and recognition",
+      "principle": "See the real people reached by unseen work",
+      "similar_to": [
+        "image30",
+        "image38",
+        "image40"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image29": {
+      "file": "image29.png",
+      "title": "Intimidation versus consideration",
+      "problem": "A stern businessman strides through the street as pedestrians move aside.",
+      "goodie_actions": "Presses the blue handheld red-heart button; two ducklings start following the businessman.",
+      "solutions": "He solemnly stops traffic for an enormous duck procession while Goodie laughs.",
+      "message": "Make way for kindness.",
+      "underlying_need": "consideration",
+      "principle": "Use authority to make space for small vulnerable creatures",
+      "similar_to": [
+        "image3",
+        "image16",
+        "image35",
+        "image37"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image30": {
+      "file": "image30.png",
+      "title": "Understaffed care",
+      "problem": "A night nurse faces a ward sign showing many residents and very few carers.",
+      "goodie_actions": "Presses the heart button as additional staff appear and displays a caring-hands message.",
+      "solutions": "With colleagues sharing the work, she has time for attentive bedside care and staff breaks.",
+      "message": "Care needs caring hands. / Now there’s time to care.",
+      "underlying_need": "support and care capacity",
+      "principle": "Share an excessive workload through adequate staffing",
+      "similar_to": [
+        "image9",
+        "image28",
+        "image38"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image31": {
+      "file": "image31.png",
+      "title": "Distressing news overload",
+      "problem": "A woman curls up anxiously before a sensational breaking-news television.",
+      "goodie_actions": "Presses the heart button; the news television becomes a little wheeled set heading toward an Enough for Today bin.",
+      "solutions": "She enjoys tea and conversation with a neighbor outside.",
+      "message": "The world outside is still here.",
+      "underlying_need": "attention and boundaries",
+      "principle": "Limit news consumption and reconnect with immediate life",
+      "similar_to": [
+        "image1",
+        "image8",
+        "image42"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image32": {
+      "file": "image32.png",
+      "title": "More presents without wonder",
+      "problem": "Santa and elves are overwhelmed by endless boxed devices and demands for more.",
+      "goodie_actions": "Presses the heart button, transforming the production line toward books, science and discovery tools.",
+      "solutions": "Children and family explore experiments, building, puzzles and books together.",
+      "message": "Wonder lasts longer.",
+      "underlying_need": "curiosity over accumulation",
+      "principle": "Choose gifts that sustain discovery instead of endless identical gadgets",
+      "similar_to": [
+        "image4",
+        "image17",
+        "image20"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image33": {
+      "file": "image33.png",
+      "title": "A postponed family visit",
+      "problem": "An older woman sits beside an empty chair while other residents receive visitors.",
+      "goodie_actions": "Presses the heart button and reminds a younger relative there is still time to make another memory.",
+      "solutions": "The relative and child visit the older woman, sharing stories and decorated biscuits.",
+      "message": "There’s still time to make another memory.",
+      "underlying_need": "family belonging",
+      "principle": "Choose a visit and make a memory now",
+      "similar_to": [
+        "image5",
+        "image14",
+        "image20"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image34": {
+      "file": "image34.png",
+      "title": "Excess luxury versus useful capacity",
+      "problem": "A wealthy man considers a second private jet while a clinic’s needs are visible outside.",
+      "goodie_actions": "Presses the heart button and turns the document into a medical-delivery flight plan.",
+      "solutions": "The man helps deliver medical supplies to a clinic using the aircraft.",
+      "message": "Imagine what your extra could do.",
+      "underlying_need": "generosity and purpose",
+      "principle": "Redirect surplus luxury toward useful service",
+      "similar_to": [
+        "image4",
+        "image39",
+        "image41",
+        "image49"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image35": {
+      "file": "image35.png",
+      "title": "Leaving a mess for others",
+      "problem": "A man walks away from a spilled drink and litter while a cleaner watches.",
+      "goodie_actions": "Presses the heart button; the reflective drink urn reveals him pointing at the mess.",
+      "solutions": "He returns and mops up his spill as the cleaner looks relieved.",
+      "message": "A little care shouldn’t be left for someone else.",
+      "underlying_need": "responsibility",
+      "principle": "Take responsibility for the mess you created",
+      "similar_to": [
+        "image37"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image36": {
+      "file": "image36.png",
+      "title": "Taking more than a share",
+      "problem": "A man fills an enormous mug while other people hold empty cups.",
+      "goodie_actions": "Presses the heart button; the oversized mug reveals the many ordinary servings inside it.",
+      "solutions": "He serves others normal cups and uses the giant mug as a flower vase.",
+      "message": "A little for you. Enough for everyone.",
+      "underlying_need": "fairness and generosity",
+      "principle": "Take a fair portion and share a limited resource",
+      "similar_to": [
+        "image18",
+        "image39",
+        "image49"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image37": {
+      "file": "image37.png",
+      "title": "Leaving gym equipment out",
+      "problem": "A muscular man walks away from scattered weights while another gym user waits.",
+      "goodie_actions": "Presses the heart button; the abandoned weights sprout little legs and follow him.",
+      "solutions": "He returns the weights to their rack and leaves the space usable for others.",
+      "message": "Your workout isn’t finished yet. / Final rep: respect.",
+      "underlying_need": "respect for shared space",
+      "principle": "Finish using a shared resource by putting it back",
+      "similar_to": [
+        "image35"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image38": {
+      "file": "image38.png",
+      "title": "Knowledge kept to oneself",
+      "problem": "A successful nursing student admires a high grade while classmates struggle in practice.",
+      "goodie_actions": "Presses the heart button; glowing pages form a bridge from her grade toward classmates.",
+      "solutions": "She teaches a classmate a clinical skill using a training mannequin.",
+      "message": "What you know can help someone grow.",
+      "underlying_need": "shared knowledge",
+      "principle": "Use personal achievement to teach others",
+      "similar_to": [
+        "image28",
+        "image30",
+        "image40"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image39": {
+      "file": "image39.png",
+      "title": "Unused possessions piling up",
+      "problem": "A family faces a garage packed with shoe boxes and other possessions.",
+      "goodie_actions": "Presses the heart button; unused shoes float into a line emphasizing their remaining useful life.",
+      "solutions": "The family offers shoes to neighbors at a Shoes to Share table.",
+      "message": "Still plenty of miles to give.",
+      "underlying_need": "generosity and reuse",
+      "principle": "Pass unused useful possessions to people who can use them",
+      "similar_to": [
+        "image18",
+        "image34",
+        "image36",
+        "image41",
+        "image49"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image40": {
+      "file": "image40.png",
+      "title": "Taking sole credit",
+      "problem": "A presenter claims My Big Idea while teammates stand behind him.",
+      "goodie_actions": "Presses the heart button; glowing worker silhouettes reveal the many contributions behind the project.",
+      "solutions": "He presents it as Our Big Idea and shares a group photo with the team.",
+      "message": "Good work has many hands.",
+      "underlying_need": "recognition and fairness",
+      "principle": "Credit the people who contributed",
+      "similar_to": [
+        "image28",
+        "image38"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image41": {
+      "file": "image41.png",
+      "title": "Buying status to feel sufficient",
+      "problem": "A woman considers a $4,000 bag beneath a Be Somebody advertisement.",
+      "goodie_actions": "Presses the heart button; the mirror displays You are enough.",
+      "solutions": "She donates $4,000 to a dog shelter and walks dogs with her ordinary canvas tote.",
+      "message": "You are enough.",
+      "underlying_need": "self-worth and generosity",
+      "principle": "Replace a status purchase with a chosen contribution",
+      "similar_to": [
+        "image2",
+        "image4",
+        "image34",
+        "image39"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image42": {
+      "file": "image42.png",
+      "title": "News spoils a shared breakfast",
+      "problem": "Café customers sit tense beneath an alarming breaking-news television.",
+      "goodie_actions": "Presses the heart button and switches the television off.",
+      "solutions": "Customers relax, drink coffee and converse; Goodie enjoys a cup too.",
+      "message": "A quieter start. A brighter day.",
+      "underlying_need": "attention and calm",
+      "principle": "Remove intrusive news from a shared social setting",
+      "similar_to": [
+        "image31"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image43": {
+      "file": "image43.png",
+      "title": "Commercially induced discomfort",
+      "problem": "A café keeps customers cold under strong air conditioning beside a sign encouraging another coffee to warm up.",
+      "goodie_actions": "Presses the heart button while the café worker adjusts the thermostat.",
+      "solutions": "Customers are comfortable; an animated snowman leaves through the door.",
+      "message": "Warm up—buy another coffee!",
+      "underlying_need": "comfort and fair treatment",
+      "principle": "Remove needless discomfort rather than profit from it",
+      "similar_to": [
+        "image35",
+        "image36"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image44": {
+      "file": "image44.png",
+      "title": "Strong but afraid to ask",
+      "problem": "A large man is anxious on icy pavement near an older woman carrying groceries.",
+      "goodie_actions": "Presses the heart button and shows a message allowing both asking and helping.",
+      "solutions": "They walk together; he carries her groceries and she accompanies him.",
+      "message": "Strong enough to ask. Kind enough to help.",
+      "underlying_need": "mutual support",
+      "principle": "Exchange help rather than assume who needs it",
+      "similar_to": [
+        "image3",
+        "image9",
+        "image25"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image45": {
+      "file": "image45.png",
+      "title": "Fear of unwanted small creatures",
+      "problem": "A woman stands on a chair with a pest-control phone screen while ants and spiders occupy her kitchen.",
+      "goodie_actions": "Uses music and magic; spiders descend gently beneath fluffy seed parachutes and ants follow a procession.",
+      "solutions": "The creatures relocate to little garden homes while Goodie plays an accordion.",
+      "message": "Let’s find you a better place.",
+      "underlying_need": "compassionate coexistence",
+      "principle": "Relocate unwanted creatures to a suitable home",
+      "similar_to": [
+        "image29"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image46": {
+      "file": "image46.png",
+      "title": "One-size-fits-all assumptions",
+      "problem": "Different customers struggle with identical shoes beneath a One Size Fits All sign.",
+      "goodie_actions": "Presses the heart button and transforms the shoe display into varied sizes and styles.",
+      "solutions": "The customers wear comfortable individual fits; the shopkeeper invites each to find their fit.",
+      "message": "People aren’t one-size-fits-all.",
+      "underlying_need": "individual needs",
+      "principle": "Adapt the offering to people instead of forcing uniformity",
+      "similar_to": [],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image47": {
+      "file": "image47.png",
+      "title": "Screen isolation and a declined invitation",
+      "problem": "A woman remains on her phone as a man invites her to go outside.",
+      "goodie_actions": "Presses the heart button and presents a Photo Walk invitation and message valuing her eye.",
+      "solutions": "They take a photo walk; she photographs an expressive tree face.",
+      "message": "Bring your eye for things.",
+      "underlying_need": "participation and contribution",
+      "principle": "Use a device creatively with others instead of staying passively inside",
+      "similar_to": [
+        "image1",
+        "image8",
+        "image26"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "image48": {
+      "file": "image48.png",
+      "title": "Paying for the next person",
+      "problem": "A café customer sees a reminder that small kindness can travel and someone counting coins.",
+      "goodie_actions": "Presses the heart button while showing the man the next-person opportunity.",
+      "solutions": "The man pays ahead at the café; another customer receives a small kindness.",
+      "message": "A little kindness can go a long way.",
+      "underlying_need": "generosity",
+      "principle": "Pass a small practical benefit to another person",
+      "similar_to": [],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": [
+        "See review correction if the exact payment action is ambiguous at preview size."
+      ]
+    },
+    "image49": {
+      "file": "image49.png",
+      "title": "Good food risks being wasted",
+      "problem": "A cafeteria chef faces trays of leftover food near closing while a woman checks her bag.",
+      "goodie_actions": "Helps offer extra meals with a Come Hungry sign and meal boxes.",
+      "solutions": "Students and the chef share meals at outdoor tables while pigeons gather nearby.",
+      "message": "Too good to waste. Better to share.",
+      "underlying_need": "generosity and food waste",
+      "principle": "Offer surplus meals to people who can enjoy them",
+      "similar_to": [
+        "image18",
+        "image34",
+        "image36",
+        "image39",
+        "image50"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": [],
+      "exact_duplicate_of": [
+        "image50"
+      ]
+    },
+    "image50": {
+      "file": "image50.png",
+      "title": "Good food risks being wasted",
+      "problem": "A cafeteria chef faces trays of leftover food near closing while a woman checks her bag.",
+      "goodie_actions": "Helps offer extra meals with a Come Hungry sign and meal boxes.",
+      "solutions": "Students and the chef share meals at outdoor tables while pigeons gather nearby.",
+      "message": "Too good to waste. Better to share.",
+      "underlying_need": "generosity and food waste",
+      "principle": "Offer surplus meals to people who can enjoy them",
+      "similar_to": [
+        "image49"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": [],
+      "exact_duplicate_of": [
+        "image49"
+      ]
+    },
+    "image51": {
+      "file": "image51.png",
+      "title": "Fear caused by an ambiguous shadow",
+      "problem": "A woman sees a frightening creature-shaped shadow in a dim bedroom.",
+      "goodie_actions": "Switches on the overhead light and shows a postcard about a different light and story.",
+      "solutions": "The shadow is revealed as a coat stand; she puts its large hat on laughing Goodie.",
+      "message": "A different light. A different story.",
+      "underlying_need": "perspective and reassurance",
+      "principle": "Check a frightening interpretation by changing the light",
+      "similar_to": [],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": []
+    },
+    "achievement-story": {
+      "file": "achievement-story.png",
+      "title": "Achievement spaceship draft",
+      "problem": "A father polishes trophies while his child waits with a cardboard box.",
+      "goodie_actions": "Reminds him he does not have to earn every happy moment.",
+      "solutions": "The father plays in a cardboard spaceship with his child; this draft omits Goodie from the final panel.",
+      "message": "You don’t have to earn every happy moment.",
+      "underlying_need": "connection versus achievement",
+      "principle": "Set achievement aside for imaginative play",
+      "similar_to": [
+        "image6"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": [
+        "Earlier variant of image6; do not count as a new concept."
+      ]
+    },
+    "achievement-story-v2": {
+      "file": "achievement-story-v2.png",
+      "title": "Achievement spaceship draft",
+      "problem": "A father polishes trophies while his child waits with a cardboard box.",
+      "goodie_actions": "Reminds him he does not have to earn every happy moment.",
+      "solutions": "He and his child play in a cardboard spaceship, with Goodie laughing beside them.",
+      "message": "You don’t have to earn every happy moment.",
+      "underlying_need": "connection versus achievement",
+      "principle": "Set achievement aside for imaginative play",
+      "similar_to": [
+        "image6"
+      ],
+      "review_basis": "Visual inspection of the actual image",
+      "review_notes": [
+        "Earlier variant of image6; do not count as a new concept."
+      ]
+    }
+  }
+}
